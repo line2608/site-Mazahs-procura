@@ -1,0 +1,133 @@
+/* Código CSS original mantido */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ff5404, #fa9344);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;  /* Importante para posicionar a imagem de fundo */
+}
+
+header {
+    background-color: #ff5404;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+#mensagem {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.search-container {
+    margin-bottom: 30px;
+}
+
+#botao {
+    background-color: #d7d8d3;
+    color: #0e0101;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#botao:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#botao:active {
+    transform: scale(0.95);
+}
+
+#imagem img {
+    margin-top: 0px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #ff5404;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.results-container {
+    margin-top: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.song {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 3px;
+    text-align: center;
+    padding: 8px;
+}
+
+#imagem img {
+    margin-top: 0px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Novo código para imagem de fundo no canto esquerdo */
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 100;
+    width: 700px;  /* Largura da imagem */
+    height: 700px;  /* Altura da imagem */
+    background-image: url('baba.png');  /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    opacity: 0.3;  /* Define a opacidade baixa */
+    z-index: -1;  /* Coloca a imagem atrás de todo o conteúdo */
+}
+
